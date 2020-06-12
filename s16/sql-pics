@@ -1,0 +1,43 @@
+ CREATE TABLE `pics` (
+   `id` int(11) NOT NULL,
+      `link` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+      `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `content` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+      `category` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `ip` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `added` datetime NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `pics` ( `link`, `title`, `content`, `ip`, `added`) VALUES
+    ('https://wallpaperaccess.com/full/32048.jpg', 'Mili kitku!', 'Ale ślicznie ziewa ten kitku :3', '192.168.1.120', '2020-01-01 11:00:00'),
+    ('https://images.wallpaperscraft.com/image/mountains_forest_clouds_144711_1920x1080.jpg', 'Pejzaż', 'Prawdą jest, że góry uczą pokory', '192.168.1.130', '2020-01-01 12:00:00'),
+    ('https://wallpaperaccess.com/full/89738.jpg', 'Roses are red', 'violets are too, we love good jokes, hope you love them too', '192.168.1.140', '2020-01-01 13:00:00'),
+    ('https://toppng.com/uploads/preview/sea-swimming-turtle-wallpaper-11555155638a9nlwgd2fl.jpg', 'Turturtle', 'Żółwiczkii fajnie pływają, bo lubią', '192.168.1.150',  '2020-01-20 13:00:00');
+
+//////////////////////////////////////
+ CREATE TABLE `categories` (
+   `id` int(11) NOT NULL,
+      `category` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+      `added` datetime NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `categories` (`id`, `category`, `added`) VALUES
+    ('1', 'Krajobrazy', '2020-01-01 12:00:00' ),
+    ('2', 'Zwierzęta', '2020-01-02 13:00:00' );
+
+ALTER TABLE `categories` ADD PRIMARY KEY (`id`);
+ALTER TABLE `categories` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+
+ CREATE TABLE `pics` (
+   `id` int(11) NOT NULL,
+      `dir` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+      `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `content` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+      `category` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `ip` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+      `added` datetime NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+ALTER TABLE `pics` ADD PRIMARY KEY (`id`);
+ALTER TABLE `pics` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;

@@ -1,0 +1,5 @@
+RewriteEngine On
+    RewriteRule ^([a-zA-Z0-9\-\_]+)$ index.php?page=$1 [NC,L,QSA]
+    RewriteRule ^([a-zA-Z0-9\-\_]+)/delete/([a-zA-Z0-9\-\_]+)$ index.php?page=$1&delete=$2 [NC,L,QSA]
+    RewriteRule ^edit/([0-9]+)$ edit?edit=$1 [NC,L,QSA]
+    

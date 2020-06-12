@@ -1,0 +1,141 @@
+/* CSS Document */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+}
+img {
+    pointer-events: none;
+}
+.komunikat-yes{
+    font-weight: bold; 
+    color: green;
+}
+.komunikat-no{
+    font-weight: bold; 
+    color: red;
+}
+.img-a {
+    height: 200px;
+}
+.img-crop {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-crop {
+    width: 300px;      
+}
+
+.main-choice {
+    float: right;
+    padding-right: 5%;
+    
+}
+.edit-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.add-pic {
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.add-heading {
+    margin-top: 100px;
+    padding-top: 50 px;
+    margin-bottom: 50px;
+}
+.add-dropzone {
+    margin-bottom: 30px;
+    background-color: #ddddcf;
+    height: 100px;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.add-input {
+    width: 100%;    
+    margin-left: 10%;
+    padding-left: 10px;
+    margin-right: 10%;
+    padding-right: 10px;
+}
+.add-form {
+    width: 100%;
+    margin-left: 10%;
+    padding-left: 20px;
+    margin-right: 10%;
+    padding-right: 20px;
+}
+.add-form ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+.add-form li { 
+    padding: 8px 0px 8px 25px;
+}
+.gallery-block {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.gallery-block .heading {
+    padding-top: 50 px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gallery-block .heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem; 
+    text-transform: uppercase;
+}
+.gallery-block.cards-gallery h6 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.gallery-block.cards-gallery .card { 
+    transition: 0.4s easy;
+}
+.gallery-block.cards-gallery .card img {
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+.gallery-block.cards-gallery .card-body {
+    text-align: center;
+}
+.gallery-block.cards-gallery .card-body p {
+    font-size: 15px;
+}
+.gallery-block.cards-gallery a {
+    color:#212529; 
+}
+.gallery-block.cards-gallery a:hover {
+    text-decoration: none;
+}
+.gallery-block.cards-gallery  .card {
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddddcf;
+    
+}
+.footer-signature {
+    text-align: right;
+}
+.stopka {
+    margin-top: 100px;
+}
+
+
