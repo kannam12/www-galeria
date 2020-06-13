@@ -8,7 +8,7 @@
         <h4>Kategorie</h4>
         <p> Tutaj możesz dodać lub usunąć wybraną kategorię. Przyjmowane są wyrażenia dłuższe niż 1 znak, dozwolone są spacje. </p>
         <h4>Dodaj zdjęcie</h4>
-        <p> Tutaj możesz dodać zdjęcie uploadując je z dysku na nasz serwer. Dozwolona opcja drag&drop.</p>
+        <p> Tutaj możesz dodać zdjęcie uploadując je z dysku na nasz serwer. Dozwolona opcja drag&drop. Sprawdzane jest odpowiednie rozszerzenie pliku oraz czy dany plik nie istnieje już na serwerze.</p>
    
     </div>
 </section>  
